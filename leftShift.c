@@ -1,10 +1,11 @@
 //Left shift operator.
-//Printing hexadecimal value of the operation. %X = Hexadecimal value format specifier.
+//Printing hexadecimal value of the operation.
 
 #include<stdio.h>
 void main()
 {
-    printf("%X",-1<<4);  // -1 Left Shift 4.
+    printf("%x\n",-1<<4); //Hexadecimal 
+    printf("%d\n",-1<<4); //Integer
 }
 
 /*
@@ -41,10 +42,12 @@ Since 1111 = 15(decimal value) and 0000 = 0(decimal value)
 
 Hexadecimal values :
 
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
-1 2 3 4 5 6 7 8 9 A  B  C  D  E  F
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+0 1 2 3 4 5 6 7 8 9 A  B  C  D  E  F
 
          1111 1111 1111 0000  ****Your final representation
            f   f    f    0    ****Hexadecimal value
+
+We assumed and solved it with 2 bytes for easy demonstration, computer will do it in 4 byte.
 */
 
